@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="stiyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de IMC</h1>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" /><br /><br />
+        <label for="peso" id="pe">Peso (kg):</label>
+        <label for="alt">Altura (m):</label><br />
+        <input type="number" id="peso" />
+        <input type="number" id="alt" /><br />
+        <button type="button" onclick="calcular()">Calcular IMC</button>
+      </form>
+      <div class="result">
+        <p id="res"></p>
+        <p id="cont"></p>
+        <div id="fimc">
+          <p id="fimr"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="oms">
+      <h2>Classificação</h2>
+      <ul>
+        <li id="abaixo">Abaixo de 18,5: Abaixo do peso</li>
+        <li id="normal">18,5 a 24,9: Peso normal</li>
+        <li id="sobrepeso">25 a 29,9: Sobrepeso</li>
+        <li id="og1">30 a 34,9: Obesidade grau I</li>
+        <li id="og2">35 a 39,9: Obesidade grau II</li>
+        <li id="og3">40 ou mais: Obesidade grau III</li>
+      </ul>
+      <p>Organização Mundial da Saúde (OMS)</p>
+    </div>
+
+    <div id="cuidados">
+      <h2>Tabela de Cuidados</h2>
+      <p id="tbres"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
